@@ -8,9 +8,12 @@
   </head>
   <body>
     <div id="vue-app">
-      <h1>{{ greet('afternoon') }}</h1>
-      <p>Name: {{ name }}</p>
-      <p>Job: {{ job }}</p>
+      <h1>Data Binding</h1>
+      <!-- use v-bind or : to bind attributes -->
+      <a v-bind:href="website">The Net Ninja</a>
+
+      <!-- use v-html to identify tags that should be rendered as html-->
+      <p v-html="websiteTag"></p>
     </div>
     <script src="app.js"></script>
   </body>
