@@ -32,7 +32,17 @@
 
       <p>My age is {{ age }}</p>
 
-      <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+      <!--<div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>-->
+      <h3>Keyboard Events </h3>
+      <label>Name:</label>
+      <input type="text" v-on:keyup="logName" v-model="name"/>
+      <label>Age:</label>
+      <input type="text" v-on:keyup="logAge" v-model="age" />
+
+      <!-- event modifiers can also be used here -->
+      <!-- for instance <input type="text" v-on:keyup.enter="logName" v-model="name"/> -->
+      <!-- would only call the function when the enter key is pressed -->
+      <!-- modifiers can also be chained such as v-on:keyup.alt.enter -->
     </div>
     <script src="app.js"></script>
   </body>

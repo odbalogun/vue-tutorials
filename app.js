@@ -28,6 +28,14 @@ new Vue({
       // run console.log(event) to see what is available in the event object
       this.x = event.offsetX
       this.y = event.offsetY
+    },
+
+    logName: function(){
+      console.log("Your name is " + this.name)
+    },
+
+    logAge: function(){
+      console.log("Your age is " + this.age)
     }
   }
 });
