@@ -37,5 +37,17 @@ new Vue({
     logAge: function(){
       console.log("Your age is " + this.age)
     }
+  },
+  computed: {
+    // use computed if a function needs to run automatically after a value has changed
+    // computed properties are more efficient than methods because Vue reruns ALL methods when a value is changed
+    // whereas for computed properties, Vue watches the values and only reruns the methods that need to be rerun
+    addToX: function(){
+      return this.age + this.x
+    },
+
+    addToY: function(){
+      return this.age + this.y
+    }
   }
 });

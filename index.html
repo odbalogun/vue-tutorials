@@ -43,6 +43,13 @@
       <!-- for instance <input type="text" v-on:keyup.enter="logName" v-model="name"/> -->
       <!-- would only call the function when the enter key is pressed -->
       <!-- modifiers can also be chained such as v-on:keyup.alt.enter -->
+
+      <h3>Computed Properties</h3>
+      <button v-on:click="x++">Add to X</button>
+      <button v-on:click="y++">Add to Y</button>
+
+      <p>Age + X = {{ addToX }}</p>
+      <p>Age + Y = {{ addToY }}</p>
     </div>
     <script src="app.js"></script>
   </body>
