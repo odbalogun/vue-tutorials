@@ -26,6 +26,10 @@
       <button v-on:click="add(1)" v-on:dblclick="add(10)">Add a Year</button>
       <button v-on:click="subtract(1)" @dblclick="subtract(10)">Subtract a Year</button>
 
+      <!-- event modifiers can add extra functionality or conditions to events -->
+      <!-- an example is v-on:click.once to trigger that event only once -->
+      <!-- or v-on:click.prevent to prevent the default action from taking place -->
+
       <p>My age is {{ age }}</p>
 
       <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
